@@ -10,13 +10,45 @@
 </head>
 <body>
   <header class="header" id="main">
-    <div class="container">
+    <nav class="header__nav">
       <div class="logo">
         <div class="logo--square"></div>
         <div class="logo--square"></div>
       </div>
-      <nav class="header__nav">
-        <ul class="header__nav__list">
+      <ul class="header__nav__list">
+        <li class="header__nav__item">
+          <a class="header__nav__links" href="#main">Main</a>
+        </li>
+        <li class="header__nav__item">
+          <a class="header__nav__links" href="#menu">Menu</a></li>
+        <li class="header__nav__item">
+          <a class="header__nav__links" href="#about_us">About us</a>
+        </li>
+        <li class="header__nav__item">
+          <a class="header__nav__links" href="#reviews">Reviews</a>
+        </li>
+        <li class="header__nav__item">
+          <a class="header__nav__links" href="#our_personnel">Our Personnel</a>
+        </li>
+        <li class="header__nav__item">
+          <a href="#" class="header__nav__links">
+            <img src="./Assets/cart.svg" alt="">
+          </a>
+        </li>
+      </ul>
+      <div class="header__nav__line-vertical"></div>
+      <div class="nav__call-us">
+        <div class="header__nav__phone">
+          <a class="header__nav__links" href="tel: +385446"><img src="./Assets/phone.png" alt=""><span class="header__nav__number">+82345823135</span></a>
+        </div>
+        <p class="nav__call-us_text">Call us for booking</p>
+      </div>
+      <button class="header__nav__button button">Book a table</button>
+      <div class="burger_menu">
+        <div class="burger-menu__header__horizont"></div>
+        <div class="burger-menu__header__horizont"></div>
+        <div class="burger-menu__header__horizont"></div>
+        <ul class="header__burger__nav__list none">
           <li class="header__nav__item">
             <a class="header__nav__links" href="#main">Main</a>
           </li>
@@ -31,22 +63,10 @@
           <li class="header__nav__item">
             <a class="header__nav__links" href="#our_personnel">Our Personnel</a>
           </li>
-          <li class="header__nav__item">
-            <a href="#" class="header__nav__links">
-              <img src="./Assets/cart.svg" alt="">
-            </a>
-          </li>
         </ul>
-        <div class="header__nav__line-vertical"></div>
-        <div class="nav__call-us">
-          <div class="header__nav__phone">
-            <a class="header__nav__links" href="tel: +385446"><img src="./Assets/phone.png" alt=""><span class="header__nav__number">+82345823135</span></a>
-          </div>
-          <p class="nav__call-us_text">Call us for booking</p>
-        </div>
-        <button class="header__nav__button button">Book a table</button>
-      </nav>
-    </div>
+      </div>
+    
+    </nav>   
     <div class="header__title">
       <h3 class="header__h3 header__tittle-style">Welcome to</h3>
       <h1 class="h1 header__tittle-style">Our restaurant</h1>
@@ -141,7 +161,7 @@
         <p class="menu__description"></p>
         <button class="button menu__button">Order</button>
       </div>
-      <div class="menu__card">
+      <div class="menu__card none">
         <div class="circle">
           <img src="./Assets/menu.jpg" alt="">
           <div class="circle-inside">
@@ -154,7 +174,7 @@
         <p class="menu__description"></p>
         <button class="button menu__button">Order</button>
       </div>
-      <div class="menu__card">
+      <div class="menu__card none">
         <div class="circle">
           <img src="./Assets/menu.jpg" alt="">
           <div class="circle-inside">

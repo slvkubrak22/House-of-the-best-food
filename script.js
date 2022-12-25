@@ -87,14 +87,24 @@ tabsContainer.addEventListener('click', function(e) {
 const linksContainer = document.querySelector('.header__nav__list');
 linksContainer.addEventListener('click', function(e) {
   e.preventDefault();
-  console.log(e.target);
+  // console.log(e.target);
   if(e.target.classList.contains('header__nav__links')) {
     const hrefCurrent = e.target.getAttribute('href');
     document.querySelector(hrefCurrent).scrollIntoView({
-      behavior: 'smooth'
+      behavior: 'smooth',
     });
   }
 });
+
+//active burger menu
+
+const burgerMenu = document.querySelector('.burger_menu');
+const burgerLinks = document.querySelector('.header__burger__nav__list');
+
+burgerMenu.addEventListener('click', function() {
+  burgerLinks.classList.remove('none');
+  burgerLinks.classList.add('visiable');
+})
 
 
 
