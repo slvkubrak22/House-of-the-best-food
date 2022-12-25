@@ -9,7 +9,7 @@
   <title>House of the Best food</title>
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="main">
     <div class="container">
       <div class="logo">
         <div class="logo--square"></div>
@@ -18,17 +18,21 @@
       <nav class="header__nav">
         <ul class="header__nav__list">
           <li class="header__nav__item">
-            <a class="header__nav__links" href="">Main</a>
+            <a class="header__nav__links" href="#main">Main</a>
           </li>
           <li class="header__nav__item">
-            <a class="header__nav__links" href="">Menu</a></li>
-          <li class="header__nav__item"><a class="header__nav__links" href="">About us</a>
+            <a class="header__nav__links" href="#menu">Menu</a></li>
+          <li class="header__nav__item">
+            <a class="header__nav__links" href="#about_us">About us</a>
           </li>
           <li class="header__nav__item">
-            <a class="header__nav__links" href="">Booking</a>
+            <a class="header__nav__links" href="#reviews">Reviews</a>
           </li>
           <li class="header__nav__item">
-            <a href="" class="header__nav__links">
+            <a class="header__nav__links" href="#our_personnel">Our Personnel</a>
+          </li>
+          <li class="header__nav__item">
+            <a href="#" class="header__nav__links">
               <img src="./Assets/cart.svg" alt="">
             </a>
           </li>
@@ -36,7 +40,7 @@
         <div class="header__nav__line-vertical"></div>
         <div class="nav__call-us">
           <div class="header__nav__phone">
-            <img src="./Assets/phone.png" alt=""><span class="header__nav__number">+82345823135</span>
+            <a class="header__nav__links" href="tel: +385446"><img src="./Assets/phone.png" alt=""><span class="header__nav__number">+82345823135</span></a>
           </div>
           <p class="nav__call-us_text">Call us for booking</p>
         </div>
@@ -47,15 +51,13 @@
       <h3 class="header__h3 header__tittle-style">Welcome to</h3>
       <h1 class="h1 header__tittle-style">Our restaurant</h1>
       <div class="flex"> 
-        <div class="header__line-horizont"></div>
-        <p class="head__title_name">House of the best food</p>
-        <div class="header__line-horizont"></div>
+        <p class="header__title_name">House of the best food</p>
       </div>
       <button class="button">View Menu</button>
     </div>
   </header>
   <main>
-    <section class="about">
+    <section class="about" id="about_us">
       <div class="about__cards">
         <div class="about__cards__card">
           <img src="./Assets/Group (1).svg" alt="">
@@ -104,7 +106,7 @@
       </div>
       <button class="button">Book a table</button>
     </section>
-    <section class="dishes pad">
+    <section class="dishes pad" id="menu">
       <h2 class="h2_title h2_title-center">Our <span class="h2_title-color">Dishes</span></h2>
       <div class="dishes__menu">
         <img class="block" src="./Assets/Mask Group.jpg" alt="">
@@ -137,7 +139,7 @@
         </div>
         <h4 class="menu__name">Burger</h4>
         <p class="menu__description"></p>
-        <button class="button">Order</button>
+        <button class="button menu__button">Order</button>
       </div>
       <div class="menu__card">
         <div class="circle">
@@ -150,7 +152,7 @@
         </div>
         <h4 class="menu__name">Burger</h4>
         <p class="menu__description"></p>
-        <button class="button">Order</button>
+        <button class="button menu__button">Order</button>
       </div>
       <div class="menu__card">
         <div class="circle">
@@ -166,7 +168,7 @@
         <button class="button menu__button">Order</button>
       </div>
     </section>
-    <section class="reviews pad">
+    <section class="reviews pad" id="reviews">
       <h2 class="h2_title h2_title-center">Our <span class="h2_title-color">Visitors</span></h2>
       <div class="slider">
         <div class="slide review_slide--1">
@@ -187,6 +189,102 @@
         <button class="slider__btn slider__btn-left"></button>
         <button class="slider__btn slider__btn-right"></button>
         <div class="dots"></div>
+      </div>
+    </section>
+    
+    <section class="personnel pad" id="our_personnel">
+      <h2 class="h2_title h2_title-center">Our <span class="h2_title-color">Personnel</span></h2>
+      <div class="personnel__tabs-container">
+        <button class="button personnel__tab personnel__tab-active" data-tab="1">
+          <span>Supervisors</span>
+        </button>
+        <button class="button personnel__tab" data-tab="2">
+          <span>Cooks</span>
+        </button>
+        <button class="button personnel__tab" data-tab="3">
+          <span>Waiters</span>
+        </button>
+        <button class="button personnel__tab" data-tab="4">
+          <span>Cleaners</span>
+        </button>
+      </div>
+      <div class="personnel__content personnel__content--1">
+        <div class="personnel__content-person">
+          <div class="personnel__content-person-circle">
+            <img class="personnel__content-person-img" src="./Assets/owner.jpeg" alt="">
+          </div>
+          <p>Chris Arram</p>
+          <p>Owner</p>
+        </div>
+        <div class="personnel__content-person">
+          <div class="personnel__content-person-circle">
+            <img class="personnel__content-person-img" src="./Assets/administrator.jpg" alt="">
+          </div>
+          <p>Ann Vikmayer</p>
+          <p>Administrator</p>
+        </div>
+      </div>
+      <div class="personnel__content personnel__content--2 hidden">
+        <div class="personnel__content-person">
+          <div class="personnel__content-person-circle">
+            <img class="personnel__content-person-img" src="./Assets/chief-cook.jpeg" alt="">
+          </div>
+          <p>Adam Berns</p>
+          <p>Сhief-cooker</p>
+        </div>
+        <div class="personnel__content-person ">
+          <div class="personnel__content-person-circle">
+            <img class="personnel__content-person-img" src="./Assets/cook-1.jpg" alt="">
+          </div>
+          <p>John Dilan</p>
+          <p>Cooker</p>
+        </div>
+        <div class="personnel__content-person">
+          <div class="personnel__content-person-circle">
+            <img class="personnel__content-person-img" src="./Assets/cook-2.jpg" alt="">
+          </div>
+          <p>Robin Cricks</p>
+          <p>Cooker</p>
+        </div>
+      </div>
+      <div class="personnel__content personnel__content--3 hidden">
+        <div class="personnel__content-person">
+          <div class="personnel__content-person-circle">
+            <img class="personnel__content-person-img" src="./Assets/waiter-1.jpg" alt="">
+          </div>
+          <p>Ben Latter</p>
+          <p>Waiter</p>
+        </div>
+        <div class="personnel__content-person">
+          <div class="personnel__content-person-circle">
+            <img class="personnel__content-person-img" src="./Assets/waiter-2.jpeg" alt="">
+          </div>
+          <p>Dean Koop</p>
+          <p>Waiter</p>
+        </div>
+        <div class="personnel__content-person">
+          <div class="personnel__content-person-circle">
+            <img class="personnel__content-person-img" src="./Assets/waitress-3.jpg" alt="">
+          </div>
+          <p>Mary Trons</p>
+          <p>Waitress</p>
+        </div>
+        <div class="personnel__content-person">
+          <div class="personnel__content-person-circle">
+            <img class="personnel__content-person-img" src="./Assets/waitress-4.jpg" alt="">
+          </div>
+          <p>Jane Simpsons</p>
+          <p>Waitressr</p>
+        </div>
+      </div>
+      <div class="personnel__content personnel__content--4 hidden">
+        <div class="personnel__content-person">
+          <div class="personnel__content-person-circle">
+            <img class="personnel__content-person-img" src="./Assets/cleaner.jpg" alt="">
+          </div>
+          <p>Mrs Marian Jules</p>
+          <p>Cleaner</p>
+        </div>
       </div>
     </section>
   </main>

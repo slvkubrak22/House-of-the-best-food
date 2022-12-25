@@ -65,5 +65,40 @@ dotsContainer.addEventListener('click', function(e) {
 });
 
 
+// tabs
+const tabsContainer = document.querySelector('.personnel__tabs-container');
+const tabs = document.querySelectorAll('.personnel__tab');
+const tabContent = document.querySelectorAll('.personnel__content');
+
+tabsContainer.addEventListener('click', function(e) {
+  const clickedTab = e.target.closest('.personnel__tab');
+  // console.log(clickedTab);
+  if(!clickedTab) return;
+  // Active tab button
+  tabs.forEach(tab => tab.classList.remove('personnel__content-active'));
+  clickedTab.classList.add('personnel__content-active');
+  // Active tab content
+  tabContent.forEach(content => content.classList.add('hidden'));
+  document.querySelector(`.personnel__content--${clickedTab.dataset.tab}`).classList.remove('hidden');
+});
+
+// Smooth scrolling
+
+const linksContainer = document.querySelector('.header__nav__list');
+linksContainer.addEventListener('click', function(e) {
+  e.preventDefault();
+  console.log(e.target);
+  if(e.target.classList.contains('header__nav__links')) {
+    const hrefCurrent = e.target.getAttribute('href');
+    document.querySelector(hrefCurrent).scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
+});
+
+
+
+
+
 
 
